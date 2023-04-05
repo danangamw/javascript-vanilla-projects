@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section class="notes" id="app">
+      <div class="notes__sidebar">
+        <button class="notes__add" type="button">Add Note</button>
+        <div class="notes__list">
+          <div class="notes__list-item notes__list-item--selected">
+            <div class="notes__small-title">Lecture Notes</div>
+            <div class="notes__small-body">I learn nothing today</div>
+            <div class="notes__small-updated">Thursday 3:30pm</div>
+          </div>
+          <div class="notes__list-item">
+            <div class="notes__small-title">Lecture Notes</div>
+            <div class="notes__small-body">I learn nothing today</div>
+            <div class="notes__small-updated">Thursday 3:30pm</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes__preview">
+        <input type="text" class="notes__title" placeholder="Enter a title" />
+        <textarea
+          class="notes__body"
+          placeholder="Type your note here..."
+        ></textarea>
+      </div>
+    </section>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
