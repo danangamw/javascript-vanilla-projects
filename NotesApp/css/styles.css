@@ -14,7 +14,7 @@ body {
 }
 
 .notes__sidebar {
-  border-radius: 2px solid #ddd;
+  border-right: 2px solid #ddd;
   flex-shrink: 0;
   overflow-y: auto;
   padding: 1rem;
@@ -102,4 +102,16 @@ body {
   line-height: 1.5;
   margin-top: 2rem;
   resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .notes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notes__sidebar {
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
 }
